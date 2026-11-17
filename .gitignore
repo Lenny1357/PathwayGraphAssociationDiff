@@ -1,0 +1,28 @@
+# Never commit data, weights or results: everything is rebuilt from the original sources.
+outputs/
+logs/
+pt_files/
+*.pt
+*.pkl
+*.npz
+*.npy
+*.h5ad
+*.mat
+*.tar
+*.gz
+*.zip
+data/**/*_ref/
+data/**/*_cache/
+data/**/ecoli_expr*/
+data/**/precise1k/
+data/**/pseudobulk/
+data/**/figures/
+data/**/*.csv
+data/**/*.tsv
+data/**/*.json
+data/**/*.xlsx
+# Python
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/

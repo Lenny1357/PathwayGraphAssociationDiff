@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphpath"
+version = "0.2.0"
+description = "Generative graph diffusion for biological pathway graphs (genes, enzymes, reactions, metabolites)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.1",
+  "numpy",
+  "pandas",
+  "scipy",
+  "networkx",
+  "matplotlib",
+]
+
+[project.optional-dependencies]
+viz   = ["umap-learn", "scikit-learn", "igraph"]
+chem  = ["rdkit"]
+data  = ["anndata", "h5py", "cobra"]
+dev   = ["pytest", "ruff", "jupyter", "nbformat"]
+
+[tool.setuptools.packages.find]
+include = ["graphpath*", "experiments*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-exclude = ["legacy", "notebooks", "outputs", "data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+ignore = ["E501", "E741", "B008", "B905"]

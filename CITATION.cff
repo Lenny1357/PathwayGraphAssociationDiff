@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "Graph Diffusion Generates Biological Pathways Supported by Independent Transcriptomic Evidence"
+type: software
+authors:
+  - family-names: Otte
+    given-names: Lennart Benedikt
+    affiliation: "Department of Engineering, King's College London"
+  - family-names: Hogstrand
+    given-names: Christer
+    affiliation: "Department of Toxicology and Forensic Science, King's College London"
+  - family-names: Mardinoglu
+    given-names: Adil
+  - family-names: Guo
+    given-names: Miao
+    affiliation: "Department of Engineering, King's College London"
+version: "0.2.0"

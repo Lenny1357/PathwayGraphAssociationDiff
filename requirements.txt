@@ -1,0 +1,22 @@
+# Versions used for the paper (Python 3.11.17, Linux aarch64, CUDA 12.6).
+# Core
+torch==2.14.1          # built against CUDA 12.6 (torch==2.14.1+cu126); pick the wheel matching your CUDA
+numpy==2.4.6
+pandas==2.3.3
+scipy==1.17.1
+networkx==3.6.1
+matplotlib==3.11.2
+tqdm==4.70.1
+# Embedding/cluster analyses and network maps
+umap-learn==0.5.12
+scikit-learn==1.9.1
+igraph==1.0.0
+# Stoichiometric checks and chemistry (data builders)
+cobra==0.32.1
+rdkit==2026.9.1
+# Data builders only (versions not pinned for the paper)
+requests
+anndata
+h5py
+# Tests
+pytest
